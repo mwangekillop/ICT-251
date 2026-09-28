@@ -1,0 +1,238 @@
+/* ICT251 Activity 2 - Main stylesheet */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    background: #f4f7fb;
+    color: #1f2937;
+}
+
+header {
+    background: #12355b;
+    color: white;
+    text-align: center;
+    padding: 2.5rem 1rem;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.3rem;
+}
+
+header p {
+    margin-bottom: 0;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    background: #0b2239;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.55rem 0.8rem;
+    border-radius: 5px;
+}
+
+nav a:hover,
+nav a:focus {
+    background: #2f80ed;
+    outline: 2px solid white;
+}
+
+main {
+    width: min(1100px, 92%);
+    margin: 2rem auto;
+}
+
+.content-section {
+    background: white;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+#hobbies {
+    background-color: #eef6ff;
+}
+
+h2 {
+    color: #12355b;
+    border-bottom: 2px solid #2f80ed;
+    padding-bottom: 0.4rem;
+}
+
+h3 {
+    color: #245b8f;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+figure {
+    margin: 0;
+    background: #f8fafc;
+    border: 1px solid #dbe3ec;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+figcaption {
+    padding: 0.75rem;
+    text-align: center;
+}
+
+video {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0.5rem 0 1rem;
+}
+
+audio {
+    width: 100%;
+    max-width: 600px;
+    margin: 0.5rem 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+caption {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+th,
+td {
+    border: 1px solid #9ca3af;
+    padding: 0.75rem;
+    text-align: left;
+}
+
+th {
+    background: #12355b;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background: #f1f5f9;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.35rem;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 0.7rem;
+    border: 1px solid #9ca3af;
+    border-radius: 5px;
+    font: inherit;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid #2f80ed;
+    border-color: #2f80ed;
+}
+
+button {
+    background: #12355b;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.4rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover,
+button:focus {
+    background: #2f80ed;
+    outline: 2px solid #12355b;
+}
+
+.note {
+    background: #fff7ed;
+    border-left: 4px solid #f59e0b;
+    padding: 0.75rem;
+}
+
+footer {
+    text-align: center;
+    background: #0b2239;
+    color: white;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+@media (max-width: 700px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    nav a {
+        text-align: center;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    main {
+        width: 94%;
+    }
+
+    .content-section {
+        padding: 1rem;
+    }
+
+    table {
+        font-size: 0.9rem;
+    }
+}
